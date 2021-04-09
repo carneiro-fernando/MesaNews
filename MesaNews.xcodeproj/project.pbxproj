@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C140800F2620D30900DC314B /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140800E2620D30900DC314B /* NewsViewModel.swift */; };
+		C14080172620D52800DC314B /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14080162620D52800DC314B /* NewsListViewModel.swift */; };
+		C140801D2620D72F00DC314B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140801C2620D72F00DC314B /* HeaderView.swift */; };
+		C14080222620E24800DC314B /* ShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14080212620E24800DC314B /* ShadowImageView.swift */; };
+		C14080272620EB5600DC314B /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14080262620EB5600DC314B /* NewsTableViewCell.swift */; };
 		C171B4DC261F99E6004DC068 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C171B4DB261F99E6004DC068 /* AppDelegate.swift */; };
 		C171B4DE261F99E6004DC068 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C171B4DD261F99E6004DC068 /* SceneDelegate.swift */; };
 		C171B4E0261F99E6004DC068 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C171B4DF261F99E6004DC068 /* ViewController.swift */; };
-		C171B4E3261F99E6004DC068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C171B4E1261F99E6004DC068 /* Main.storyboard */; };
 		C171B4E6261F99E6004DC068 /* MesaNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C171B4E4261F99E6004DC068 /* MesaNews.xcdatamodeld */; };
 		C171B4E8261F99EC004DC068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C171B4E7261F99EC004DC068 /* Assets.xcassets */; };
-		C171B4EB261F99EC004DC068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C171B4E9261F99EC004DC068 /* LaunchScreen.storyboard */; };
 		C171B4F6261F99ED004DC068 /* MesaNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C171B4F5261F99ED004DC068 /* MesaNewsTests.swift */; };
 		C171B501261F99ED004DC068 /* MesaNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C171B500261F99ED004DC068 /* MesaNewsUITests.swift */; };
+		C171B51A261FA08B004DC068 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C171B519261FA08B004DC068 /* APIKey.swift */; };
+		C171B520261FAD3F004DC068 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = C171B51F261FAD3E004DC068 /* News.swift */; };
+		C171B529261FAF11004DC068 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C171B528261FAF11004DC068 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C140800E2620D30900DC314B /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		C14080162620D52800DC314B /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
+		C140801C2620D72F00DC314B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		C14080212620E24800DC314B /* ShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowImageView.swift; sourceTree = "<group>"; };
+		C14080262620EB5600DC314B /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		C171B4D8261F99E6004DC068 /* MesaNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MesaNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C171B4DB261F99E6004DC068 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C171B4DD261F99E6004DC068 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C171B4DF261F99E6004DC068 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C171B4E2261F99E6004DC068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C171B4E5261F99E6004DC068 /* MesaNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MesaNews.xcdatamodel; sourceTree = "<group>"; };
 		C171B4E7261F99EC004DC068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C171B4EA261F99EC004DC068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C171B4EC261F99EC004DC068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C171B4F1261F99ED004DC068 /* MesaNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MesaNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C171B4F5261F99ED004DC068 /* MesaNewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesaNewsTests.swift; sourceTree = "<group>"; };
@@ -51,6 +60,9 @@
 		C171B4FC261F99ED004DC068 /* MesaNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MesaNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C171B500261F99ED004DC068 /* MesaNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesaNewsUITests.swift; sourceTree = "<group>"; };
 		C171B502261F99ED004DC068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C171B519261FA08B004DC068 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		C171B51F261FAD3E004DC068 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		C171B528261FAF11004DC068 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,13 +90,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C140800D2620D2F700DC314B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C140800E2620D30900DC314B /* NewsViewModel.swift */,
+				C14080162620D52800DC314B /* NewsListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C140801B2620D72100DC314B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C140801C2620D72F00DC314B /* HeaderView.swift */,
+				C14080212620E24800DC314B /* ShadowImageView.swift */,
+				C14080262620EB5600DC314B /* NewsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C171B4CF261F99E6004DC068 = {
 			isa = PBXGroup;
 			children = (
 				C171B4DA261F99E6004DC068 /* MesaNews */,
-				C171B4F4261F99ED004DC068 /* MesaNewsTests */,
-				C171B4FF261F99ED004DC068 /* MesaNewsUITests */,
-				C171B4D9261F99E6004DC068 /* Products */,
+				C171B511261F9A06004DC068 /* Tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,17 +125,21 @@
 				C171B4FC261F99ED004DC068 /* MesaNewsUITests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C171B4DA261F99E6004DC068 /* MesaNews */ = {
 			isa = PBXGroup;
 			children = (
+				C140801B2620D72100DC314B /* Views */,
+				C140800D2620D2F700DC314B /* ViewModels */,
+				C171B527261FAEF4004DC068 /* Services */,
+				C171B51E261FAD25004DC068 /* Models */,
+				C171B518261FA069004DC068 /* Config */,
 				C171B4DB261F99E6004DC068 /* AppDelegate.swift */,
 				C171B4DD261F99E6004DC068 /* SceneDelegate.swift */,
 				C171B4DF261F99E6004DC068 /* ViewController.swift */,
-				C171B4E1261F99E6004DC068 /* Main.storyboard */,
 				C171B4E7261F99EC004DC068 /* Assets.xcassets */,
-				C171B4E9261F99EC004DC068 /* LaunchScreen.storyboard */,
 				C171B4EC261F99EC004DC068 /* Info.plist */,
 				C171B4E4261F99E6004DC068 /* MesaNews.xcdatamodeld */,
 			);
@@ -129,6 +162,40 @@
 				C171B502261F99ED004DC068 /* Info.plist */,
 			);
 			path = MesaNewsUITests;
+			sourceTree = "<group>";
+		};
+		C171B511261F9A06004DC068 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C171B4D9261F99E6004DC068 /* Products */,
+				C171B4FF261F99ED004DC068 /* MesaNewsUITests */,
+				C171B4F4261F99ED004DC068 /* MesaNewsTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		C171B518261FA069004DC068 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C171B519261FA08B004DC068 /* APIKey.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		C171B51E261FAD25004DC068 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C171B51F261FAD3E004DC068 /* News.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C171B527261FAEF4004DC068 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C171B528261FAF11004DC068 /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C171B4EB261F99EC004DC068 /* LaunchScreen.storyboard in Resources */,
 				C171B4E8261F99EC004DC068 /* Assets.xcassets in Resources */,
-				C171B4E3261F99E6004DC068 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +326,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C171B520261FAD3F004DC068 /* News.swift in Sources */,
+				C14080222620E24800DC314B /* ShadowImageView.swift in Sources */,
+				C14080272620EB5600DC314B /* NewsTableViewCell.swift in Sources */,
 				C171B4E6261F99E6004DC068 /* MesaNews.xcdatamodeld in Sources */,
+				C14080172620D52800DC314B /* NewsListViewModel.swift in Sources */,
 				C171B4E0261F99E6004DC068 /* ViewController.swift in Sources */,
 				C171B4DC261F99E6004DC068 /* AppDelegate.swift in Sources */,
+				C140801D2620D72F00DC314B /* HeaderView.swift in Sources */,
 				C171B4DE261F99E6004DC068 /* SceneDelegate.swift in Sources */,
+				C171B529261FAF11004DC068 /* NetworkManager.swift in Sources */,
+				C171B51A261FA08B004DC068 /* APIKey.swift in Sources */,
+				C140800F2620D30900DC314B /* NewsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,25 +371,6 @@
 			targetProxy = C171B4FD261F99ED004DC068 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C171B4E1261F99E6004DC068 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C171B4E2261F99E6004DC068 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C171B4E9261F99EC004DC068 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C171B4EA261F99EC004DC068 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C171B503261F99ED004DC068 /* Debug */ = {
@@ -430,7 +484,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
