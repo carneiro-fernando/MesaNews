@@ -72,10 +72,10 @@ final class NewsTableViewCell: UITableViewCell{
         
         //title
         NSLayoutConstraint.activate([
-            newsImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-            newsImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-            newsImage.topAnchor.constraint(equalTo: newsImage.bottomAnchor, constant: 8),
-            newsImage.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 16)
+            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+            titleLabel.topAnchor.constraint(equalTo: newsImage.bottomAnchor, constant: 8),
+            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16)
         ])
     }
     

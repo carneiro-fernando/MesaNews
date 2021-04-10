@@ -28,8 +28,8 @@ final class ShadowImageView: UIView {
         v.translatesAutoresizingMaskIntoConstraints = false
         v.backgroundColor = .clear
         v.layer.shadowColor = UIColor.black.cgColor
-        v.layer.shadowOffset = CGSize(width: 5, height: 5)
-        v.layer.opacity = 0.7
+        v.layer.shadowOffset = .zero //CGSize(width: 5, height: 5)
+        v.layer.shadowOpacity = 0.7
         v.layer.shadowRadius = 10.0
         return v
     }()

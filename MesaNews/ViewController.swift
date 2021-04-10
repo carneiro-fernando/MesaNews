@@ -9,7 +9,7 @@ import UIKit
 import SafariServices
 
 class ViewController: UIViewController {
-
+    
     var viewModel = NewsListViewModel()
     
     private lazy var headerView: HeaderView = {
@@ -31,8 +31,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         setupView()
-            fetchNews()
-    
+        fetchNews()
+        
     }
     
     func setupView(){
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         view.addSubview(tableView)
         
         setupConstraints()
-    
+        
     }
     
     func setupConstraints() {
@@ -85,4 +85,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell ?? UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let news = viewModel.newsVM[indexPath.row]
+        guard let url = URL(string: news.url) else { return }
+        
+        let config = SFSafariViewController.Configuration()
+        let safariViewController = SFSafariViewController(url: url, configuration: config)
+        safariViewController.modalPresentationStyle = .fullScreen
+        present(safariViewController, animated: true)
+        
+    }
 }

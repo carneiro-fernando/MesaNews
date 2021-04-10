@@ -9,11 +9,10 @@ import UIKit
 
 final class HeaderView: UIView {
     private var fontSize: CGFloat
-        = 0.0
     private lazy var headingLabel: UILabel = {
         let v = UILabel()
         v.translatesAutoresizingMaskIntoConstraints = false
-        v.text = "News"
+        v.text = "MESA NEWS"
         v.font = UIFont.boldSystemFont(ofSize: fontSize)
         return v
     }()
@@ -28,16 +27,8 @@ final class HeaderView: UIView {
         return v
     }()
     
-    private lazy var plusImage: UIImageView = {
-        let v = UIImageView()
-        v.translatesAutoresizingMaskIntoConstraints = false
-        let config = UIImage.SymbolConfiguration(pointSize: fontSize, weight: .bold)
-        v.image = UIImage(systemName: "plus", withConfiguration: config)
-        return v
-    }()
-    
     private lazy var headerStackView: UIStackView = {
-        let v = UIStackView(arrangedSubviews: [headerCircleImage, headingLabel, plusImage])
+        let v = UIStackView(arrangedSubviews: [headerCircleImage, headingLabel])
         v.translatesAutoresizingMaskIntoConstraints = false
         v.axis = .horizontal
         return v
