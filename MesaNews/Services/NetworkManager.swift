@@ -32,21 +32,12 @@ class NetworkManager{
                 completion(nil)
                 return
             }
-            debugPrint(data, response, error)
-
             let newsEnvelope = try? JSONDecoder().decode(NewsEnvelope.self, from: data)
             newsEnvelope == nil ? completion(nil) : completion(newsEnvelope!.data)
             
         }.resume()
     }
-    
-    
-    
-    
-    
-    
-    
-    
+
     func getImage (urlString: String, completion: @escaping (Data?) -> Void) {
         guard let url = URL(string: urlString) else {
             completion(nil)

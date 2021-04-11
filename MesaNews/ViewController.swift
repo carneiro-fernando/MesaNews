@@ -12,6 +12,29 @@ class ViewController: UIViewController {
     
     var viewModel = NewsListViewModel()
     
+    private lazy var loginStackView: LoginStackView = {
+        let v = LoginStackView(fontSize: 22)
+        v.isUserInteractionEnabled = true
+        v.isMultipleTouchEnabled = true
+        return v
+    }()
+    
+    private lazy var loginImageView: LoginImageView = {
+        let v = LoginImageView()
+        return v
+    }()
+    
+    private lazy var blur: UIView = {
+        let v = UIView()
+        
+        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.light)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = view.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        v.addSubview(blurEffectView)
+        return v
+    }()
+    
     private lazy var headerView: HeaderView = {
         let v = HeaderView(fontSize: 32)
         return v
@@ -24,6 +47,8 @@ class ViewController: UIViewController {
         v.register(NewsTableViewCell.self, forCellReuseIdentifier: viewModel.reuseID)
         v.delegate = self
         v.dataSource = self
+        v.isUserInteractionEnabled = false
+        
         return v
     }()
     
@@ -39,10 +64,16 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
         view.addSubview(headerView)
         view.addSubview(tableView)
+        view.addSubview(blur)
+        view.addSubview(loginImageView)
+        view.addSubview(loginStackView)
+        
         
         setupConstraints()
         
     }
+    
+    //MARK:-Constraints
     
     func setupConstraints() {
         //Header
@@ -59,8 +90,12 @@ class ViewController: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
         
-        
-        
+        //LoginStackView
+        NSLayoutConstraint.activate([
+            loginStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 50),
+            loginStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 200),
+            loginStackView.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 250),
+        ])
         
     }
     
@@ -69,10 +104,11 @@ class ViewController: UIViewController {
             self.tableView.reloadData()
         }
     }
-    
-    
 }
 
+
+
+//MARK:- TableView extension to conform protocol (CollectionView will be here too)
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.newsVM.count
