@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     var viewModel = NewsListViewModel()
     
+    
     private lazy var loginStackView: LoginStackView = {
         let v = LoginStackView(fontSize: 22)
         v.isUserInteractionEnabled = true
@@ -40,24 +41,43 @@ class ViewController: UIViewController {
         return v
     }()
     
+    
+    
     private lazy var tableView: UITableView = {
         let v = UITableView()
         v.translatesAutoresizingMaskIntoConstraints = false
         v.tableFooterView = UIView()
         v.register(NewsTableViewCell.self, forCellReuseIdentifier: viewModel.reuseID)
+        v.isUserInteractionEnabled = false
         v.delegate = self
         v.dataSource = self
-        v.isUserInteractionEnabled = false
         
         return v
     }()
     
+    private lazy var btn: UIButton = {
+        let button = UIButton (frame: CGRect(x: Int(view.bounds.maxX / 4),y: Int(view.bounds.maxY / 3)*2, width: 200, height: 50))
+        button.backgroundColor = #colorLiteral(red: 0.5841883259, green: 0, blue: 0.09302507481, alpha: 1)
+        button.setTitle("ENTRAR SEM LOGIN", for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        view.addSubview(button)
+        return button
+    }()
+    
+    @objc func buttonAction (sender:UIButton!){
+            loginImageView.isHidden = true
+            loginStackView.isHidden = true
+            blur.isHidden = true
+            tableView.isUserInteractionEnabled = true
+            btn.isHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        overrideUserInterfaceStyle = .light    
         setupView()
         fetchNews()
-        
+  
     }
     
     func setupView(){
@@ -67,6 +87,7 @@ class ViewController: UIViewController {
         view.addSubview(blur)
         view.addSubview(loginImageView)
         view.addSubview(loginStackView)
+        view.addSubview(btn)
         
         
         setupConstraints()
@@ -123,7 +144,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let news = viewModel.newsVM[indexPath.row]
-        guard let url = URL(string: news.url) else { return }
+        guard let url = URL(string: news.url)
+        else { return }
+        
+        
         
         let config = SFSafariViewController.Configuration()
         let safariViewController = SFSafariViewController(url: url, configuration: config)

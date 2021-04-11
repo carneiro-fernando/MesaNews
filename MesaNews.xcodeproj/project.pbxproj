@@ -13,7 +13,6 @@
 		C14080222620E24800DC314B /* ShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14080212620E24800DC314B /* ShadowImageView.swift */; };
 		C14080272620EB5600DC314B /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14080262620EB5600DC314B /* NewsTableViewCell.swift */; };
 		C150717E26234361009ECAB0 /* LoginStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150717D26234361009ECAB0 /* LoginStackView.swift */; };
-		C150718F26234D5B009ECAB0 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C150718E26234D5B009ECAB0 /* Storyboard.storyboard */; };
 		C15071972623721E009ECAB0 /* LoginImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15071962623721E009ECAB0 /* LoginImageView.swift */; };
 		C171B4DC261F99E6004DC068 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C171B4DB261F99E6004DC068 /* AppDelegate.swift */; };
 		C171B4DE261F99E6004DC068 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C171B4DD261F99E6004DC068 /* SceneDelegate.swift */; };
@@ -51,7 +50,6 @@
 		C14080212620E24800DC314B /* ShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowImageView.swift; sourceTree = "<group>"; };
 		C14080262620EB5600DC314B /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		C150717D26234361009ECAB0 /* LoginStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStackView.swift; sourceTree = "<group>"; };
-		C150718E26234D5B009ECAB0 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		C15071962623721E009ECAB0 /* LoginImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginImageView.swift; sourceTree = "<group>"; };
 		C171B4D8261F99E6004DC068 /* MesaNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MesaNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C171B4DB261F99E6004DC068 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 		C171B4CF261F99E6004DC068 = {
 			isa = PBXGroup;
 			children = (
-				C150718E26234D5B009ECAB0 /* Storyboard.storyboard */,
 				C171B4DA261F99E6004DC068 /* MesaNews */,
 				C171B511261F9A06004DC068 /* Tests */,
 			);
@@ -311,7 +308,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C171B4E8261F99EC004DC068 /* Assets.xcassets in Resources */,
-				C150718F26234D5B009ECAB0 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
