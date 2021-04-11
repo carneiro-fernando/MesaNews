@@ -7,17 +7,18 @@
 
 import Foundation
 
-struct News: Codable {
-    let author: String?
-    let title: String?
-    let description: String?
-    let url: String?
-    let urlToImage: String?
+struct News: Decodable {
+    var title: String?
+    var description: String?
+    var content: String?
+    var author: String?
+    var published_at: String?
+    var highlight: Bool?
+    var url: String?
+    var image_url: String?
 }
 
 struct NewsEnvelope: Decodable {
-    let status: String
-    let totalResults: Int
-    let articles: [News]
+    var data: [News]
 }
 

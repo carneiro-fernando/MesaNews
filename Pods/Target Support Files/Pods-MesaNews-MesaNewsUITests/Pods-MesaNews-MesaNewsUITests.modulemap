@@ -1,0 +1,6 @@
+framework module Pods_MesaNews_MesaNewsUITests {
+  umbrella header "Pods-MesaNews-MesaNewsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
